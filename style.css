@@ -1,0 +1,46 @@
+/* Terminal Green, the app's default theme. */
+:root {
+  --background: #0a0e0b;
+  --surface: #101612;
+  --border: #223127;
+  --text: #d6f5de;
+  --dim: #86ae91;
+  --accent: #39e17f;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+.prompt { color: var(--accent); margin: 0 0 8px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0; }
+h2 { font-size: 18px; margin: 40px 0 8px; color: var(--accent); }
+h2::before { content: "// "; color: var(--dim); }
+h3 { font-size: 16px; margin: 24px 0 4px; }
+.meta { color: var(--dim); margin: 4px 0 24px; font-size: 14px; }
+.lead { font-size: 17px; }
+p, li { color: var(--text); }
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+a { color: var(--accent); }
+code {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 14px;
+}
+hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0 0; }
+.nav { margin-top: 48px; color: var(--dim); }
